@@ -1,6 +1,7 @@
 package com.app.demoSpark.service;
 
 import com.app.demoSpark.models.User;
+import com.app.demoSpark.models.UserBasicData;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,10 +12,11 @@ public class UserServiceImpl implements UserService{
     private static Map<String, User> users = new HashMap<String, User> ();
 
     public UserServiceImpl(){
-        users.put("101", new User("101","Pavan Solapure","Perez", "pavan.solapure@gmail.com"));
-        users.put("102", new User("102","Aadya Solapure","Perez","aadya.solapure@gmail.com"));
-        users.put("103", new User("103","Aaarna Solapure","Perez", "aarna.solapure@gmail.com"));
-        users.put("104", new User("104","Shilpa Solapure","Perez","shilpa.solapure@gmail.com"));
+        users.put("101", new User("101","Pavan Solapure","Perez", "pavan.solapure@gmail.com", new UserBasicData(1, "1","15126622","M",30)));
+        users.put("102", new User("102","Aadya Solapure","Perez","aadya.solapure@gmail.com", new UserBasicData(2, "1","15126622","M",30)));
+        users.put("103", new User("103","Aaarna Solapure","Perez", "aarna.solapure@gmail.com", new UserBasicData(3, "1","15126622","M",30)));
+        users.put("104", new User("104","Shilpa Solapure","Perez","shilpa.solapure@gmail.com", new UserBasicData(4, "1","15126622","M",30)));
+
     }
 
     @Override

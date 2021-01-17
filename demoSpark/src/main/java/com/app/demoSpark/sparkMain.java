@@ -39,6 +39,11 @@ public class sparkMain {
             return new Gson().toJson(userService.getUsers());
         });
 
+        get("/users/:id", (req,res)-> {
+            res.type("application/json");
+            return new Gson().toJson(userService.getUserById (req.params (":id")));
+        });
+
         delete("/users/delete/:id", (req,res) -> {
             res.type("application/json");
             userService.deleteUserById(req.params(":id"));
