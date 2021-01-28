@@ -1,11 +1,14 @@
 package com.app.demoSpark;
 
+import com.app.demoSpark.models.Products;
 import com.app.demoSpark.models.User;
 import com.app.demoSpark.service.ProductService;
 import com.app.demoSpark.service.ProductServiceImpl;
 import com.app.demoSpark.service.UserService;
 import com.app.demoSpark.service.UserServiceImpl;
 import com.google.gson.Gson;
+
+import java.util.List;
 
 import static spark.Spark.*;
 
@@ -83,7 +86,12 @@ public class sparkMain {
 
         get ("/products", (req, res) -> {
             res.type ("application/json");
-            return new Gson ().toJson (productService.getProducts ());
+            List<Products> productsList = productService.getProducts ();
+            if (productsList.size () > 0){
+                return new Gson ().toJson (productsList);
+            } else {
+                return new Gson ().toJson ("No existe productos en stock");
+            }
         });
 
     }
