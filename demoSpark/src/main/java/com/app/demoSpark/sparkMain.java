@@ -1,6 +1,8 @@
 package com.app.demoSpark;
 
 import com.app.demoSpark.models.User;
+import com.app.demoSpark.service.ProductService;
+import com.app.demoSpark.service.ProductServiceImpl;
 import com.app.demoSpark.service.UserService;
 import com.app.demoSpark.service.UserServiceImpl;
 import com.google.gson.Gson;
@@ -12,6 +14,7 @@ public class sparkMain {
     public static void main (String[] args) {
 
         UserService userService = new UserServiceImpl ();
+        ProductService productService = new ProductServiceImpl ();
 
         //configure port
         port (8080);
@@ -76,6 +79,11 @@ public class sparkMain {
                 return new Gson ().toJson ("User not found or error in edit");
             }
 
+        });
+
+        get ("/products", (req, res) -> {
+            res.type ("application/json");
+            return new Gson ().toJson (productService.getProducts ());
         });
 
     }

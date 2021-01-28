@@ -5,6 +5,7 @@ import lombok.Data;
 
 import java.util.Optional;
 
+/** The type User. */
 @Data
 @AllArgsConstructor
 public class User {

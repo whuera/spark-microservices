@@ -3,6 +3,7 @@ package com.app.demoSpark.models;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+/** The type User basic data. */
 @Data
 @AllArgsConstructor
 public class UserBasicData {

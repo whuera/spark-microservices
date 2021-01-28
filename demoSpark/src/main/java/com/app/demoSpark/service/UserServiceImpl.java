@@ -5,10 +5,12 @@ import com.app.demoSpark.models.UserBasicData;
 
 import java.util.*;
 
-public class UserServiceImpl implements UserService{
+/** The type User service. */
+public class UserServiceImpl implements UserService {
     private static Map<String, User> users = new HashMap<String, User> ();
 
-    public UserServiceImpl(){
+  /** Instantiates a new User service. */
+  public UserServiceImpl() {
 
         users.put("101", new User("101","Pavan Solapure","Perez", Optional.ofNullable("pavan.solapure@gmail.com"), Optional.ofNullable ("https://bucket-mobilpymes.s3.amazonaws.com/img/a1.jpg"), new UserBasicData(1, "1","15126622","M",30)));
         users.put("102", new User("102","Aadya Solapure","Perez",Optional.ofNullable("aadya.solapure@gmail.com"), Optional.ofNullable ("https://bucket-mobilpymes.s3.amazonaws.com/img/a2.jpg"), new UserBasicData(2, "1","15126622","M",30)));
