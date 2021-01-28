@@ -21,7 +21,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void saveProduct (Products product) {
-
+        productsMap.put (String.valueOf(product.getIdProduct ()), product) ;
     }
 
     @Override
