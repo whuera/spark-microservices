@@ -24,4 +24,4 @@ Maven home: /usr/local/Cellar/maven/3.3.9/libexec
 Java version: 1.8.0_102, vendor: Oracle Corporation.
 ```
 
-[image](https://files.slack.com/files-pri/T019V4WGZV4-F01LFPUEKPW/image.png)
+![image](https://files.slack.com/files-pri/T019V4WGZV4-F01LFPUEKPW/image.png)
