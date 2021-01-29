@@ -23,3 +23,12 @@ Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T16:41:4
 Maven home: /usr/local/Cellar/maven/3.3.9/libexec
 Java version: 1.8.0_102, vendor: Oracle Corporation.
 ```
+@startuml
+
+class DemoApplication
+
+ class Main {
+  void calculeNumberPrimo()
+ }
+ DemoApplication <|-- Main
+@enduml
