@@ -93,6 +93,13 @@ public class sparkMain {
                 return new Gson ().toJson ("No existe productos en stock");
             }
         });
+/**
+ * method from request by idProducts
+ */
+        get ("/products/:id", (req, res) -> {
+            res.type ("application/json");
+            return new Gson ().toJson (productService.getProductById (req.params (":id")));
+        });
 
     }
 }
