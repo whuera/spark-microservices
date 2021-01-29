@@ -27,6 +27,7 @@ Java version: 1.8.0_102, vendor: Oracle Corporation.
 ![image1](https://github.com/whuera/assets/blob/main/map-class.png)
 
 **Controllers**
-Controller 
+
+Controller: mas sencillos que springboot
 
 ![image1](https://github.com/whuera/assets/blob/main/controllers.png)
