@@ -15,4 +15,5 @@ public class Products {
     private int quantityProduct;
     private double costProduct;
     private String urlImageProduct;
+    private int statusProduct;
 }
