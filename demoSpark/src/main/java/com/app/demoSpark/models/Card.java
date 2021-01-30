@@ -12,4 +12,5 @@ public class Card {
     private int idCard;
     private String codeCard;
     private String typeCard;
+    private String statusCard;
 }
