@@ -4,6 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /** The type Products. */
+
+/**
+ * Class Model Products
+ */
 @AllArgsConstructor
 @Data
 public class Products {
