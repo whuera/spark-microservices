@@ -13,4 +13,5 @@ public class Card {
     private String codeCard;
     private String typeCard;
     private String statusCard;
+    private String codeChip;
 }
